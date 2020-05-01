@@ -1,0 +1,28 @@
+.nav {
+  background: $main-color;
+  height: 108px;
+  padding: 0 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 49px;
+    height: 80px;
+    display: inline-block;
+  }
+
+  .link-item {
+    margin-right: 64px;
+    a {
+      color: white;
+      font-size: 20px;
+      line-height: 30px;
+      text-decoration: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
