@@ -1,6 +1,246 @@
 .home {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+    text-align: center;
+  }
+
   .banner {
-    height:840px;
-    background-image: url('./assets/banner.png');
+    height: 840px;
+    background-image: url("./assets/banner.png");
+    font-weight: 700;
+  }
+
+  .banner-sub-title {
+    font-size: 36px;
+    line-height: 54px;
+    color: $main-color-dark;
+  }
+
+  .banner-title {
+    font-size: 64px;
+    line-height: 96px;
+    color: $main-color-dark;
+    font-weight: 700;
+  }
+
+  .feature {
+    background-color: $main-color-light;
+  }
+
+  .feature-item {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 37px;
+    padding-right: 37px;
+    img {
+      margin-bottom: 40px;
+      height: 100px;
+      width: 100px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+      color: $main-color-dark;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    p {
+      line-height: 24px;
+    }
+  }
+
+  .classic {
+    .classic-item {
+      margin-bottom: 32px;
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    .classic-title {
+      color: $main-color;
+      font-size: 48px;
+      font-weight: black;
+      font-style: italic;
+    }
+  }
+
+  .joint-design {
+    height: 2182px;
+    background: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .gallery {
+      max-width: 1540px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+
+    .more {
+      align-items: flex-end;
+    }
+
+    .more-img {
+      position: relative;
+      height: 100%;
+      display: flex;
+      max-width: 30%;
+      transition: all 0.65s 0.3s;
+      transform: translateX(0px);
+      margin-right: 85px;
+    }
+
+    .more-img::after {
+      content: "";
+      position: absolute;
+      background: white;
+      top: 8%;
+      bottom: 8%;
+      left: 10%;
+      right: -85px;
+    }
+
+    .more-img span {
+      padding: 5px 0 5px 32px;
+    }
+
+    .more-img span {
+      font-size: 72px;
+      color: $main-color;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      z-index: 10000;
+      white-space: nowrap;
+    }
+
+    .more span::before {
+      content: "MORE";
+      position: absolute;
+      transition: all 0.65s 0.3s;
+      transform: translateY(0px);
+    }
+
+    .more span:hover::before {
+      transform: translateY(-85px);
+      opacity: 0.7;
+    }
+
+    .more span::after {
+      content: "MORE";
+      position: absolute;
+      transition: all 0.65s 0.3s;
+      transform: translateY(0px);
+    }
+
+    .more span:hover::after {
+      transform: translateY(-145px);
+      opacity: 0.4;
+    }
+    
+
+    .more-img:hover img:last-child {
+      transform: translateX(15px);
+      transition: all 0.65s 0.3s;
+    }
+
+
+    .joint-item {
+      padding-bottom:100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      &:before {
+        content:'';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(#ffffff, 0.5);
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        line-height: 108px;
+        font-size: 72px;
+        color: $main-color;
+        display: inline-block;
+        letter-spacing: 0px;
+        white-space: nowrap;
+        z-index:2;
+      }
+
+      &__blue {
+        background-image: url('./assets/product-8.png');
+      }
+
+      &__pink {
+        background-image: url('./assets/product-9.png');
+      }
+    }
+  }
+
+  .recommend {
+    margin-top: -20%;
+
+    img {
+      vertical-align: middle;
+    }
+
+    .recommend-item-content {
+      padding: 16px;
+      border: 1px solid #DEE2E6;
+      border-top: 1px solid transparent;
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .paragraph {
+        font-weight: normal;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+
+      .time {
+        font-weight: normal;
+        line-height: 24px;
+        color: #707070;
+      }
+    }
+  }
+
+  .contact {
+    background: $main-color-light;
+
+    .contact-content {
+      max-width: 792px;
+      margin: 0 auto;
+
+      p {
+        font-size: 20px;
+        line-height: 30px; 
+        margin-bottom: 20px;
+      }
+    }
   }
 }
