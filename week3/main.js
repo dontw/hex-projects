@@ -1,12 +1,15 @@
 document.getElementById("nav").innerHTML = `
   <nav class="nav">
+    <div class="menu-btn">
+      <img src="./assets/icon-menu.svg" alt="menu icon" />
+    </div>
     <h1>
       <a href="/">
-        <img class="logo" src="./assets/icon-glasses.svg" alt="glasses logo" />
+        <img class="logo" src="./assets/logo.png" alt="glasses logo" />
       </a>
     </h1>
 
-    <ul class="flex">
+    <ul id="menu" class="flex">
       <li class="link-item">
         <a href="#">系列鏡框</a>
       </li>
@@ -28,6 +31,9 @@ document.getElementById("footer").innerHTML = `
     <div class="container">
       <div class="flex justify-between items-center mb-18">
         <ul class="flex">
+          <li class="footer-item">
+            <a href="#">首頁</a>
+          </li>
           <li class="footer-item">
             <a href="#">系列鏡框</a>
           </li>
@@ -62,14 +68,14 @@ document.getElementById("footer").innerHTML = `
       <ul class="contact-list">
         <li class="contact-item">
           <a href="tel:0800000000"
-            ><img class="icon" src="./assets/icon-phone.svg" alt="phone" />
+            ><img class="icon icon-phone inline-block" src="./assets/icon-phone.svg" alt="phone" />
             0800-000-000</a
           >
         </li>
         <li class="contact-item">
           <a href="mail:glasses@business.com"
             ><img
-              class="icon"
+              class="icon icon-mail inline-block"
               src="./assets/icon-mail.svg"
               alt="phone"
             />glasses@business.com</a
@@ -89,3 +95,10 @@ document.getElementById("footer").innerHTML = `
     </div>
   </footer>
 `;
+
+const MenuBtnElm = document.querySelector(".menu-btn");
+const menuElm = document.querySelector("#menu")
+
+MenuBtnElm.addEventListener("click", () => {
+  menuElm.classList.toggle("active")
+});

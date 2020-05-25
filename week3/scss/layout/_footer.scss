@@ -34,6 +34,10 @@
   }
 
   .contact-item {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
     .icon {
       vertical-align: middle;
       margin-right: 23px;
@@ -41,6 +45,7 @@
     a {
       font-size: 36px;
       line-height: 54px;
+      font-weight: normal;
     }
   }
 
@@ -50,11 +55,53 @@
     }
   }
 
-  .copyright-item{
+  .copyright-item {
     margin-right: 62px;
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+@include respond-to("pad") {
+  .footer {
+    .icon-item {
+      width: 24px;
+      height: 24px;
+      margin-right: 24px;
+    }
+
+    .contact-item {
+      margin-bottom: 9px;
+      .icon {
+        margin-right: 12px;
+      }
+
+      .icon-phone {
+        width: 23px;
+        height: 23px;
+      }
+
+      .icon-mail {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    .copyright {
+      .logo {
+        display: none;
+      }
+    }
+
+    .copyright-item {
+      margin-right: 24px;
     }
   }
 }

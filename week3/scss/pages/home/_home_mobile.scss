@@ -1,0 +1,26 @@
+.home {
+  @include respond-to('mobile'){
+    .title {
+      font-size: 24px;
+      margin-bottom: 32px;
+      line-height: 48px;
+    }
+    .banner {
+      height: 394px;
+      background-image: url("./assets/banner-sm.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .banner-sub-title {
+      font-size: 16px;
+      line-height: 30px;
+      text-align: right;
+    }
+
+    .banner-title {
+      font-size: 32px;
+      line-height: 1;
+    }
+  }
+}

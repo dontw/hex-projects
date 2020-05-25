@@ -14,6 +14,7 @@
   .banner {
     height: 840px;
     background-image: url("./assets/banner.png");
+    background-position: center center;
     font-weight: 700;
   }
 
@@ -23,12 +24,6 @@
     color: $main-color-dark;
   }
 
-  .banner-title {
-    font-size: 64px;
-    line-height: 96px;
-    color: $main-color-dark;
-    font-weight: 700;
-  }
 
   .feature {
     background-color: $main-color-light;
@@ -80,6 +75,7 @@
     background: url("./assets/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 
     .gallery {
       max-width: 1540px;
@@ -209,6 +205,7 @@
       padding: 16px;
       border: 1px solid #DEE2E6;
       border-top: 1px solid transparent;
+      background: white;
 
       h3 {
         font-size: 16px;

@@ -5,10 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  .menu-btn{
+    display: none;
+  }
 
   .logo {
-    width: 49px;
-    height: 80px;
     display: inline-block;
   }
 
@@ -23,6 +26,58 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  @include respond-to("pad") {
+    padding: 0 48px;
+    .link-item {
+      margin-right: 40px;
+    }
+  }
+
+  @include respond-to("mobile") {
+    display: flex;
+    justify-content:center;
+    padding: 0 48px;
+    height: 50px;
+    .menu-btn {
+      display: block;
+      position: absolute;
+      left:16px;
+    }
+    .link-item {
+      margin-right: 40px;
+    }
+
+    .logo{
+      height:29px;
+      width: 48px;
+    }
+
+    ul {
+      display: block;
+      position: absolute;
+      top:50px;
+      background: $main-color;
+      width: 100%;
+      left: -100%;
+      transition: left .3s;
+      &.active {
+        left:0%;
+      }
+    }
+
+    li {
+      width: 100%;
+    }
+
+    li a {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 16px 0;
+      border: 1px solid #ffffff;
     }
   }
 }

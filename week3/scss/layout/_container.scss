@@ -3,8 +3,14 @@
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@include respond-to('pad') {
   .container {
     max-width: 672px;
+  }
+}
+
+@include respond-to('mobile') {
+  .container {
+    max-width: 352px;
   }
 }

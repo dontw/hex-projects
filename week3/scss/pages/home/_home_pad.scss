@@ -1,0 +1,87 @@
+.home {
+  @include respond-to("pad") {
+    .section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .banner-sub-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .banner-title {
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 32px;
+      line-height: 48px;
+    }
+
+    .feature-item {
+      img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .classic {
+      .icon {
+        width: 32px;
+        height: 25px;
+      }
+      .classic-title {
+        font-size: 28px;
+      }
+    }
+
+    .joint-design {
+      height: 1221px;
+      .gallery {
+        max-width: 672px;
+        margin-bottom: 40px;
+      }
+
+      .more-img span {
+        font-size: 40px;
+      }
+
+      .more-img .arrow {
+        width: 27px;
+        width: 27px;
+        margin-left: 10px;
+      }
+
+      .joint-item {
+        margin-bottom: 24px;
+        p {
+          font-size: 32px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .recommend {
+      margin-top: -48%;
+      .recommend-item{
+        margin-bottom: 24px;
+      }
+    }
+
+    .contact {
+      background: $main-color-light;
+  
+      .contact-content {
+        max-width: 496px;
+      }
+    }
+  }
+}
